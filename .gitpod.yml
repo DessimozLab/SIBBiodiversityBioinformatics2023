@@ -1,0 +1,25 @@
+image: gitpod/workspace-base
+
+tasks:
+- name: install mamba and omark
+  init: |
+    curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+    bash Mambaforge-$(uname)-$(uname -m).sh -b -p /workspace/conda && rm Mambaforge-$(uname)-$(uname -m).sh
+    /workspace/conda/bin/mamba init bash
+
+    source ${HOME}/.bashrc
+    mamba create -n omacademy -c conda-forge python=3.9 -y
+    mamba activate omark
+    pip install omark
+
+- name: Get OMAMer databases
+  init: |
+          cd /workspace
+          curl -L -O "https://oma-stage.vital-it.ch/oma/current/Metazoa.h5"
+          curl -L -O "https://oma-stage.vital-it.ch/oma/current/saccharomyceta.h5"
+ 
+vscode:
+  extensions:
+    - anwar.papyrus-pdf
+
+workspaceLocation: "/workspace"
