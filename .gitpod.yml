@@ -9,8 +9,10 @@ tasks:
 
     source ${HOME}/.bashrc
     mamba create -n omacademy -c conda-forge python=3.9 -y
-    mamba activate omark
+    mamba activate omacademy
     pip install omark
+  command: |
+    mamba activate omacademy
 
 - name: Get OMAMer databases
   init: |
