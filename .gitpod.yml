@@ -12,13 +12,14 @@ tasks:
     mamba activate omacademy
     pip install omark
   command: |
+    source ${HOME}/.bashrc
     mamba activate omacademy
 
 - name: Get OMAMer databases
   init: |
           cd /workspace
-          curl -L -O "https://oma-stage.vital-it.ch/oma/current/Metazoa.h5"
-          curl -L -O "https://oma-stage.vital-it.ch/oma/current/saccharomyceta.h5"
+          curl -L -O "https://oma-stage.vital-it.ch/All/Metazoa.h5"
+          curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
  
 vscode:
   extensions:
