@@ -32,7 +32,9 @@ tasks:
           cd /workspace
           curl -L -O "https://oma-stage.vital-it.ch/All/Metazoa.h5"
           curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
-          cp Saccharomyceta.h5 Module3_FastOMA/myWorkingDir/in_folder/omamerdb.h5  
+          cp Saccharomyceta.h5 Module3_FastOMA/myWorkingDir/in_folder/omamerdb.h5
+          mv Saccharomyceta.h5 Module2_OMAmer/  
+          mv Metazoa.h5 Module2_OMAmer/
 vscode:
   extensions:
     - anwar.papyrus-pdf
