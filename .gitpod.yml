@@ -6,23 +6,22 @@ tasks:
     curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
     bash Mambaforge-$(uname)-$(uname -m).sh -b -p /workspace/conda && rm Mambaforge-$(uname)-$(uname -m).sh
     /workspace/conda/bin/mamba init bash
-
     source ${HOME}/.bashrc
     mamba create -n omacademy -c conda-forge python=3.9 -y
     mamba activate omacademy
-    cd Module3_FastOMA
+    cd SIBComparativeGenomics2023/Module3_FastOMA
     wget https://github.com/DessimozLab/FastOMA/archive/refs/heads/master.zip
     unzip master.zip
     mv FastOMA-master FastOMA
     pip install  ./FastOMA
-    cd ..
-    mamba install -c bioconda mafft 
-    mamba install -c bioconda fasttree
-    conda install -c conda-forge openjdk
-    cd Module5_SpeciesTrees
+    cd ../..
+    mamba install -c bioconda mafft -y 
+    mamba install -c bioconda fasttree -y
+    conda install -c conda-forge openjdk -y
+    cd SIBComparativeGenomics2023/Module5_SpeciesTrees
     git clone https://github.com/DessimozLab/f1000_PhylogeneticTree.git
-    echo 'export PATH=$PATH:${HOME}/Module5_SpeciesTrees/f1000_PhylogeneticTree/' >> ${HOME}/.bash_profile
-    cd ..
+    'export PATH=$PATH:/workspace/SIBComparativeGenomics2023/Module5_SpeciesTrees/f1000_PhylogeneticTree/' >> ${HOME}/.bashrc
+    cd ../..
   command: |
     source ${HOME}/.bashrc
     mamba activate omacademy
@@ -32,8 +31,8 @@ tasks:
           cd /workspace
           curl -L -O "https://oma-stage.vital-it.ch/All/Metazoa.h5"
           curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
-          cp Saccharomyceta.h5 Module3_FastOMA/myWorkingDir/in_folder/omamerdb.h5
-          mv Saccharomyceta.h5 Module2_OMAmer/  
+          cp Saccharomyceta.h5 SIBComparativeGenomics2023/Module3_FastOMA/myWorkingDir/in_folder/omamerdb.h5
+          mv Saccharomyceta.h5 SIBComparativeGenomics2023/Module2_OMAmer/  
           mv Metazoa.h5 Module2_OMAmer/
 vscode:
   extensions:
