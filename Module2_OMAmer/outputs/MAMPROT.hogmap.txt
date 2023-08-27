@@ -1,0 +1,3 @@
+qseqid	hogid	overlap	family-score	subfamily-score	qseqlen	subfamily-medianseqlen
+MP1	HOG:D0630083.1g.9c.31d	1.0	0.9705189607076256	0.929756161095818	143	142
+MP2	HOG:D0630583	1.0	0.9997833473540066	0.9997833473540066	128	154
