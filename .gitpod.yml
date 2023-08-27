@@ -20,7 +20,7 @@ tasks:
     conda install -c conda-forge openjdk -y
     cd SIBComparativeGenomics2023/Module5_SpeciesTrees
     git clone https://github.com/DessimozLab/f1000_PhylogeneticTree.git
-    'export PATH=$PATH:/workspace/SIBComparativeGenomics2023/Module5_SpeciesTrees/f1000_PhylogeneticTree/' >> ${HOME}/.bashrc
+    echo 'export PATH=$PATH:/workspace/SIBComparativeGenomics2023/Module5_SpeciesTrees/f1000_PhylogeneticTree/' >> ${HOME}/.bashrc
     cd ../..
   command: |
     source ${HOME}/.bashrc
@@ -33,7 +33,7 @@ tasks:
           curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
           cp Saccharomyceta.h5 SIBComparativeGenomics2023/Module3_FastOMA/myWorkingDir/in_folder/omamerdb.h5
           mv Saccharomyceta.h5 SIBComparativeGenomics2023/Module2_OMAmer/  
-          mv Metazoa.h5 Module2_OMAmer/
+          mv Metazoa.h5 SIBComparativeGenomics2023/Module2_OMAmer/
 vscode:
   extensions:
     - anwar.papyrus-pdf
