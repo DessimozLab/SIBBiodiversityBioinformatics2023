@@ -10,7 +10,19 @@ tasks:
     source ${HOME}/.bashrc
     mamba create -n omacademy -c conda-forge python=3.9 -y
     mamba activate omacademy
-    pip install omark
+    cd Module3_FastOMA
+    wget https://github.com/DessimozLab/FastOMA/archive/refs/heads/master.zip
+    unzip master.zip
+    mv FastOMA-master FastOMA
+    pip install  ./FastOMA
+    cd ..
+    mamba install -c bioconda mafft 
+    mamba install -c bioconda fasttree
+    conda install -c conda-forge openjdk
+    cd Module5_SpeciesTrees
+    git clone https://github.com/DessimozLab/f1000_PhylogeneticTree.git
+    echo 'export PATH=$PATH:${HOME}/Module5_SpeciesTrees/f1000_PhylogeneticTree/' >> ${HOME}/.bash_profile
+    cd ..
   command: |
     source ${HOME}/.bashrc
     mamba activate omacademy
@@ -20,7 +32,7 @@ tasks:
           cd /workspace
           curl -L -O "https://oma-stage.vital-it.ch/All/Metazoa.h5"
           curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
- 
+          cp Saccharomyceta.h5 Module3_FastOMA/myWorkingDir/in_folder/omamerdb.h5  
 vscode:
   extensions:
     - anwar.papyrus-pdf
