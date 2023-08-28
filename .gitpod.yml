@@ -18,13 +18,13 @@ tasks:
     mamba install -c bioconda mafft -y 
     mamba install -c bioconda fasttree -y
     conda install -c conda-forge openjdk -y
-    cd SIBComparativeGenomics2023/Module5_SpeciesTrees
+    cd SIBComparativeGenomics2023/Module4_SpeciesTrees
     git clone https://github.com/DessimozLab/f1000_PhylogeneticTree.git
-    echo 'export PATH=$PATH:/workspace/SIBComparativeGenomics2023/Module5_SpeciesTrees/f1000_PhylogeneticTree/' >> ${HOME}/.bashrc
+    echo 'export PATH=$PATH:/workspace/SIBComparativeGenomics2023/Module4_SpeciesTrees/f1000_PhylogeneticTree/' >> ${HOME}/.bashrc
+    echo 'mamba activate omacademy' >> ${HOME}/.bashrc
     cd ../..
   command: |
     source ${HOME}/.bashrc
-    mamba activate omacademy
 
 - name: Get OMAMer databases
   init: |
@@ -32,8 +32,8 @@ tasks:
           curl -L -O "https://oma-stage.vital-it.ch/All/Metazoa.h5"
           curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
           cp Saccharomyceta.h5 SIBComparativeGenomics2023/Module3_FastOMA/myWorkingDir/in_folder/omamerdb.h5
-          mv Saccharomyceta.h5 SIBComparativeGenomics2023/Module2_OMAmer/  
-          mv Metazoa.h5 SIBComparativeGenomics2023/Module2_OMAmer/
+          mv Saccharomyceta.h5 SIBComparativeGenomics2023/Module2_OMAmer/working_dir/omamer_databases/
+          mv Metazoa.h5 SIBComparativeGenomics2023/Module2_OMAmer/working_dir/omamer_databases/
 vscode:
   extensions:
     - anwar.papyrus-pdf
