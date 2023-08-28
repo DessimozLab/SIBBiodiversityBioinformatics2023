@@ -9,20 +9,20 @@ tasks:
     source ${HOME}/.bashrc
     mamba create -n omacademy -c conda-forge python=3.9 -y
     mamba activate omacademy
-    cd SIBComparativeGenomics2023/Module3_FastOMA
+    cd SIBComparativeGenomics2023/Module3_FastOMA/working_dir/
     wget https://github.com/DessimozLab/FastOMA/archive/refs/heads/master.zip
     unzip master.zip
     mv FastOMA-master FastOMA
     pip install  ./FastOMA
-    cd ../..
+    cd ../../../
     mamba install -c bioconda mafft -y 
     mamba install -c bioconda fasttree -y
     conda install -c conda-forge openjdk -y
-    cd SIBComparativeGenomics2023/Module4_SpeciesTrees
+    cd SIBComparativeGenomics2023/Module4_SpeciesTrees/working_dir/
     git clone https://github.com/DessimozLab/f1000_PhylogeneticTree.git
-    echo 'export PATH=$PATH:/workspace/SIBComparativeGenomics2023/Module4_SpeciesTrees/f1000_PhylogeneticTree/' >> ${HOME}/.bashrc
+    echo 'export PATH=$PATH:/workspace/SIBComparativeGenomics2023/Module4_SpeciesTrees/working_dir/f1000_PhylogeneticTree/' >> ${HOME}/.bashrc
     echo 'mamba activate omacademy' >> ${HOME}/.bashrc
-    cd ../..
+    cd ../../../
   command: |
     source ${HOME}/.bashrc
 
@@ -31,7 +31,7 @@ tasks:
           cd /workspace
           curl -L -O "https://oma-stage.vital-it.ch/All/Metazoa.h5"
           curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
-          cp Saccharomyceta.h5 SIBComparativeGenomics2023/Module3_FastOMA/myWorkingDir/in_folder/omamerdb.h5
+          cp Saccharomyceta.h5 SIBComparativeGenomics2023/Module3_FastOMA/working_dir/in_folder/omamerdb.h5
           mv Saccharomyceta.h5 SIBComparativeGenomics2023/Module2_OMAmer/working_dir/omamer_databases/
           mv Metazoa.h5 SIBComparativeGenomics2023/Module2_OMAmer/working_dir/omamer_databases/
 vscode:
