@@ -41,7 +41,7 @@ You can access the GitPod here: [https://gitpod.io/#https://github.com/DessimozL
 Participants need to sign up for a GitPod account via Github and/or LinkedIn to access 50 hours per month for free, which is ample time to complete the exercises. After logging in, create a new workspace by choosing SIBBiodiverstyGenomics2023, Browser Editor, and Standard configuration (4 cores, 8 GB RAM, 30 GB storage). 
 
 Notes: 
-GiPod might ask you for permission when it comes to pasting in GitPod terminal, You can click on Allow on the top left corner in Google Chrome. The Safari browser is not recommended. 
+GitPod might ask you for permission when it comes to pasting in GitPod terminal, You can click on Allow on the top left corner in Google Chrome. The Safari browser is not recommended. 
 You can click on OK if you see a box about changes in the git repository.
 
 If you mistakenly close the browser window, you can go to the GitPod Dashboard and enter your workspace again.
