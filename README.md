@@ -38,9 +38,17 @@ We will be mainly working on an [GitPod](https://gitpod.io/), an online integrat
 
 You can access the GitPod here: [https://yannevers-sibcomparativ-h4jdg218tva.ws-eu104.gitpod.io/](https://yannevers-sibcomparativ-h4jdg218tva.ws-eu104.gitpod.io/) 
 
-Participants need to sign up for a GitPod account via Github and/or LinkedIn to access 50 hours per month for free, which is ample time to complete the exercises. After logging in, create a new workspace by choosing SIBComparativeGenomics2023, Browser Editor, and Standard configuration (4 cores, 8 GB RAM, 30 GB storage). 
+Participants need to sign up for a GitPod account via Github and/or LinkedIn to access 50 hours per month for free, which is ample time to complete the exercises. After logging in, create a new workspace by choosing SIBBiodiverstyGenomics2023, Browser Editor, and Standard configuration (4 cores, 8 GB RAM, 30 GB storage). 
 
-## Schedule 2023 edition (Aug. 30)
+Notes: 
+GiPod might ask you for permission when it comes to pasting in GitPod terminal, You can click on Allow on the top left corner in Google Chrome. The Safari browser is not recommended. 
+You can click on OK if you see a box about changes in the git repository.
+
+If you mistakenly close the browser window, you can go to the GitPod Dashboard and enter your workspace again.
+As each user has limited CPU hours, please make sure that you stop the workspace, once you finish the analysis.   
+
+
+## Schedule Aug 30 2023 
 
 
 <table>
