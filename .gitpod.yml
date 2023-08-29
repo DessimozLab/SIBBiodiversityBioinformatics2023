@@ -1,7 +1,7 @@
 image: gitpod/workspace-base
 
 tasks:
-- name: install mamba and omark
+- name: install all softwares and download databases
   init: |
     curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
     bash Mambaforge-$(uname)-$(uname -m).sh -b -p /workspace/conda && rm Mambaforge-$(uname)-$(uname -m).sh
@@ -25,17 +25,15 @@ tasks:
     echo 'export PATH=$PATH:/workspace/SIBComparativeGenomics2023/Module4_SpeciesTrees/working_dir/f1000_PhylogeneticTree/' >> ${HOME}/.bashrc
     echo 'mamba activate omacademy' >> ${HOME}/.bashrc
     cd ../../../
+    curl -L -O "https://oma-stage.vital-it.ch/All/Metazoa.h5"
+    curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
+    cp Saccharomyceta.h5 SIBComparativeGenomics2023/Module3_FastOMA/working_dir/in_folder/omamerdb.h5
+    mv Saccharomyceta.h5 SIBComparativeGenomics2023/Module2_OMAmer/working_dir/omamer_databases/
+    mv Metazoa.h5 SIBComparativeGenomics2023/Module2_OMAmer/working_dir/omamer_databases/
+
   command: |
     source ${HOME}/.bashrc
 
-- name: Get OMAMer databases
-  init: |
-          cd /workspace
-          curl -L -O "https://oma-stage.vital-it.ch/All/Metazoa.h5"
-          curl -L -O "https://oma-stage.vital-it.ch/All/Saccharomyceta.h5"
-          cp Saccharomyceta.h5 SIBComparativeGenomics2023/Module3_FastOMA/working_dir/in_folder/omamerdb.h5
-          mv Saccharomyceta.h5 SIBComparativeGenomics2023/Module2_OMAmer/working_dir/omamer_databases/
-          mv Metazoa.h5 SIBComparativeGenomics2023/Module2_OMAmer/working_dir/omamer_databases/
 vscode:
   extensions:
     - anwar.papyrus-pdf
