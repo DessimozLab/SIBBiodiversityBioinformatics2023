@@ -21,7 +21,7 @@ This course is centered around comparative genomics. After the course, you will 
 
 ## The OMA Academy
 
-To complete the course, you will follow the exercises of the [OMA Academy](https://omabrowser.org/oma/academy/). OMA Academy is an e-learning website with a suite of self-learning modules centered around comparative genomics and phylogenetics. The modules are specifically designed to help computational biologists use OMA, a method and database for inferring orthologs. Each module is stand-alone, with a basic introduction and a series of exercises with hints and answers.
+To complete the course, you will follow the exercises of the OMA Academy on https://oma-stage.vital-it.ch/oma/home/ for this course (which will be later available on https://omabrowser.org/oma/academy/). OMA Academy is an e-learning website with a suite of self-learning modules centered around comparative genomics and phylogenetics. The modules are specifically designed to help computational biologists use OMA, a method and database for inferring orthologs. Each module is stand-alone, with a basic introduction and a series of exercises with hints and answers.
 
 
 ## Prerequisites
@@ -36,12 +36,12 @@ Participants should have a fundamental knowledge of utilizing the command line o
 
 We will be mainly working on an [GitPod](https://gitpod.io/), an online integrated development environment (IDE) that allows users to write, edit, and run code directly in a web browser. GitPod is cloud-based, meaning that all software, code, and files needed for the course are stored and processed on remote servers; you will not need to install or configure anything locally.
 
-You can access the GitPod here: [https://yannevers-sibcomparativ-h4jdg218tva.ws-eu104.gitpod.io/](https://yannevers-sibcomparativ-h4jdg218tva.ws-eu104.gitpod.io/) 
+You can access the GitPod here: [https://gitpod.io/#https://github.com/DessimozLab/SIBBiodiversityBioinformatics2023](https://gitpod.io/#https://github.com/DessimozLab/SIBBiodiversityBioinformatics2023) 
 
-Participants need to sign up for a GitPod account via Github and/or LinkedIn to access 50 hours per month for free, which is ample time to complete the exercises. After logging in, create a new workspace by choosing SIBBiodiverstyGenomics2023, Browser Editor, and Standard configuration (4 cores, 8 GB RAM, 30 GB storage). 
+Participants need to sign up for a GitPod account via Github and/or LinkedIn to access 50 hours per month for free, which is ample time to complete the exercises. After logging in, create a new workspace by choosing SIBBiodiverstyGenomics2023, Browser Editor, and Large configuration (8 cores, 16 GB RAM, 50 GB storage). 
 
 Notes: 
-GiPod might ask you for permission when it comes to pasting in GitPod terminal, You can click on Allow on the top left corner in Google Chrome. The Safari browser is not recommended. 
+GitPod might ask you for permission when it comes to pasting in GitPod terminal, You can click on Allow on the top left corner in Google Chrome. The Safari browser is not recommended. 
 You can click on OK if you see a box about changes in the git repository.
 
 If you mistakenly close the browser window, you can go to the GitPod Dashboard and enter your workspace again.
