@@ -21,7 +21,7 @@ This course is centered around comparative genomics. After the course, you will 
 
 ## The OMA Academy
 
-To complete the course, you will follow the exercises of the OMA Academy on https://oma-stage.vital-it.ch/oma/home/ for this course (which will be later available on https://omabrowser.org/oma/academy/). OMA Academy is an e-learning website with a suite of self-learning modules centered around comparative genomics and phylogenetics. The modules are specifically designed to help computational biologists use OMA, a method and database for inferring orthologs. Each module is stand-alone, with a basic introduction and a series of exercises with hints and answers.
+To complete the course, you will follow the exercises of the OMA Academy on https://oma-stage.vital-it.ch/oma/academy/ for this course (which will be later available on https://omabrowser.org/oma/academy/). OMA Academy is an e-learning website with a suite of self-learning modules centered around comparative genomics and phylogenetics. The modules are specifically designed to help computational biologists use OMA, a method and database for inferring orthologs. Each module is stand-alone, with a basic introduction and a series of exercises with hints and answers.
 
 
 ## Prerequisites
