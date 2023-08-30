@@ -3,18 +3,10 @@
 
 ## Teachers
 
-* Natasha Glover
-* Yannis Nevers
-* Sina Majidian
-* Christophe Dessimoz
-
-## FastOMA (temp)
-
-FastOMA command line 
-```
-cd /workspace/SIBBiodiversityBioinformatics2023/Module3_FastOMA/working_dir/
-nextflow FastOMA/FastOMA_light.nf --input_folder in_folder --output_folder out_folder -resume
-```
+* [Natasha Glover](https://lab.dessimoz.org/people/natasha_glover)
+* [Yannis Nevers](https://lab.dessimoz.org/people/yannis_nevers)
+* [Sina Majidian](https://sinamajidian.github.io/)
+* [Christophe Dessimoz](https://lab.dessimoz.org/people/yannis_nevers)
 
 
 
