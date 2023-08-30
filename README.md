@@ -8,6 +8,15 @@
 * Sina Majidian
 * Christophe Dessimoz
 
+## FastOMA (temp)
+
+FastOMA command line 
+```
+cd /workspace/SIBBiodiversityBioinformatics2023/Module3_FastOMA/working_dir/
+nextflow FastOMA_light.nf --input_folder in_folder --output_folder out_folder
+```
+
+
 
 ## Learning outcomes
 
