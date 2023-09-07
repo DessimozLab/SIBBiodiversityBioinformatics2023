@@ -20,6 +20,10 @@ This course is centered around comparative genomics. After the course, you will 
 * Infer orthologs on custom genomes using the FastOMA pipeline
 * Construct and interpret phylogenetic species trees using OMA data
 
+## Course lectures
+
+The pdf for the slides of the course can be found [here].(https://github.com/DessimozLab/SIBBiodiversityBioinformatics2023/blob/b905b11c92d06be967a7fca4aa4389f8bf78ed02/Biodiversity%20bioinformatics%202023.pdf)
+
 ## The OMA Academy
 
 To complete the course, you will follow the exercises of the OMA Academy on https://oma-stage.vital-it.ch/oma/academy/ for this course. OMA Academy is an e-learning website with a suite of self-learning modules centered around comparative genomics and phylogenetics. The modules are specifically designed to help computational biologists use OMA, a method and database for inferring orthologs. Each module is stand-alone, with a basic introduction and a series of exercises with hints and answers.
