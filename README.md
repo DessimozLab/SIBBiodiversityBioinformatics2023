@@ -22,7 +22,7 @@ This course is centered around comparative genomics. After the course, you will 
 
 ## Course lectures
 
-The pdf for the slides of the course can be found [here].(https://github.com/DessimozLab/SIBBiodiversityBioinformatics2023/blob/b905b11c92d06be967a7fca4aa4389f8bf78ed02/Biodiversity%20bioinformatics%202023.pdf)
+The pdf for the slides of the course can be found [here](https://github.com/DessimozLab/SIBBiodiversityBioinformatics2023/blob/b905b11c92d06be967a7fca4aa4389f8bf78ed02/Biodiversity%20bioinformatics%202023.pdf).
 
 ## The OMA Academy
 
